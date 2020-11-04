@@ -1,11 +1,11 @@
 <?php
 
+namespace EventCenter\MyPack;
 
-namespace EventCenter;
-
-class Manager{
-    public function index()
+class Pack
+{
+    public function show()
     {
-        echo 'this is event center packagist';
+        return 'this is event center packagist';
     }
 }

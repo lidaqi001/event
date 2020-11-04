@@ -8,5 +8,10 @@
             "email": "liqi01@weadoc.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "EventCenter\\MyPack\\": "src/"
+        }
+    },
     "require": {}
 }
