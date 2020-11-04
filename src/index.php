@@ -1,11 +1,10 @@
 <?php
 
-namespace EventCenter\MyPack;
-
-class Pack
+namespace Ldq\Event;
+class Index
 {
     public function show()
     {
-        return 'this is event center packagist';
+        echo 'this is event center packagist';
     }
 }

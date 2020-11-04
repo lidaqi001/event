@@ -1,5 +1,5 @@
 {
-    "name": "ldq/event_center",
+    "name": "ldq/event",
     "description": "sxx event manager center",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "EventCenter\\MyPack\\": "src/"
+            "Ldq\\Event\\": "src/"
         }
     },
     "require": {}
