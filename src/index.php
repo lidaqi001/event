@@ -1,2 +1,11 @@
 <?php
-	echo 'this is ldq/event_center packagist';
+
+
+namespace EventCenter;
+
+class Manager{
+    public function index()
+    {
+        echo 'this is event center packagist';
+    }
+}
