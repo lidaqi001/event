@@ -1,0 +1,10 @@
+{
+    "name": "ldq/event_center",
+    "authors": [
+        {
+            "name": "liqi",
+            "email": "liqi01@weadoc.com"
+        }
+    ],
+    "require": {}
+}
