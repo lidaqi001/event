@@ -1,5 +1,7 @@
 {
     "name": "ldq/event_center",
+    "description": "sxx event manager center",
+    "license": "MIT",
     "authors": [
         {
             "name": "liqi",
