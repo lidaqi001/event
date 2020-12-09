@@ -6,18 +6,24 @@
  * Time: 16:01
  */
 
-use EventCenter\MyPack\Pack;
+use Ldq\EventCenter\Event;
 
 require 'vendor/autoload.php';
 
 try {
-    $obj = new Pack();
-    print_r($obj->index());
+    $obj = new Event();
+    $msg = $obj->show();
+    echo $msg;
+    file_put_contents('./log.log', $msg . PHP_EOL, FILE_APPEND);
+} catch (Exception $e) {
+    $msg = $e->getMessage();
+    echo $msg;
+    file_put_contents('./log.log', $msg . PHP_EOL, FILE_APPEND);
     return;
-}catch (Exception $e){
-    echo $e->getMessage();
-    return;
-}catch (Error $error){
-    echo $error->getMessage().','.$error->getFile().','.$error->getLine();
+} catch (Error $error) {
+    $msg = $error->getMessage() . ',' . $error->getFile() . ',' . $error->getLine();
+    echo $msg;
+    file_put_contents('./log.log', $msg . PHP_EOL, FILE_APPEND);
     return;
 }
+echo PHP_EOL . 'end';

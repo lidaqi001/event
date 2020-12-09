@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ldq\\Event\\": "src/"
+            "Ldq\\EventCenter\\": "src/"
         }
     },
     "require": {}
